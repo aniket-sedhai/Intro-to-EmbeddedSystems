@@ -103,6 +103,6 @@ uint8_t find_minimum(uint8_t *ptr, uint8_t size);
  * @returns nothing
  */
 
-void sort_array(uint8_t *arrayPtr, uint8_t arrayLength);
+void sort_array(uint8_t *ptr, uint8_t size);
 
 #endif /* __STATS_H__ */
