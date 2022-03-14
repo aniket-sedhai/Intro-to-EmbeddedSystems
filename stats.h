@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Header file with all function prototypes
  *
- * <Add Extended Description Here>
+ * Describes the function that will be used for the stats.c implementation
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Aniket Sedhai
+ * @date 03/13/2022
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,85 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief A function that prints the statistics related to a set of data
  *
- * <Add Extended Description Here>
+ * This function takes values of each statistics as a parameter in the following order:
+ * minimum, maximum, mean, and median and prints them in complete sentences
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param min The value you want to print as the minimum
+ * @param max The value you want to print as the maximum
+ * @param mean The value you want to print as the mean
+ * @param med The value you want to print as the median
  *
- * @return <Add Return Informaiton here>
+ * @return Returns nothing after a successful printing of the statistics using printf.
+ */
+void print_statistics(uint8_t min, uint8_t max, uint8_t mean, uint8_t med);
+
+/**
+ * @brief A function that prints the whole array
+ * 
+ * This function takes array of data and a length, prints the array to the screen
+ * @param ptr takes a pointer to the array
+ * @param size takes the number of elements in the array
+ * 
+ * @return Returns 0 after printing the array
+ */
+void print_array(uint8_t *ptr, uint8_t size);
+
+/**
+ * @brief A function that finds the median
+ *
+ * This function takes array of data and a length, finds the median from the given data
+ * @param ptr takes a pointer to the array
+ * @param size takes the number of elements in the array
+ *
+ * @return Returns the median
+ */
+uint8_t find_median(uint8_t *ptr, uint8_t size);
+
+/**
+ * @brief A function that calculates the mean
+ *
+ * This function takes array of data and a length, calculates the mean from the given data
+ * @param ptr takes a pointer to the array
+ * @param size takes the number of elements in the array 
+ *
+ * @return Returns the mean
+ */
+uint8_t find_mean(uint8_t *ptr, uint8_t size);
+
+/**
+ * @brief A function that finds the maximum value in the given data
+ *
+ * This function takes array of data and a length, finds the maximum from the given data
+ * @param ptr takes a pointer to the array
+ * @param size takes the number of elements in the array
+ *
+ * @return Returns the maximum value
+ */
+uint8_t find_maximum(uint8_t *ptr, uint8_t size);
+
+/**
+ * @brief A function that finds the minimum
+ *
+ * This function takes array of data and a length, finds the minimum from the given data
+ * @param ptr takes a pointer to the array
+ * @param size takes the number of elements in the array
+ *
+ * @return Returns the minimum
+ */
+uint8_t find_minimum(uint8_t *ptr, uint8_t size);
+
+/**
+ * @brief A function that sorts the array
+ *
+ * This function takes array of data and a length, finds the minimum from the given data
+ * @param ptr takes a pointer to the array
+ * @param size takes the number of elements in the array
+ *
+ * @returns nothing
  */
 
+void sort_array(uint8_t *arrayPtr, uint8_t arrayLength);
 
 #endif /* __STATS_H__ */
