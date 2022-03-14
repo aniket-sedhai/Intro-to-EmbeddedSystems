@@ -36,7 +36,7 @@
  *
  * @return Returns nothing after a successful printing of the statistics using printf.
  */
-void print_statistics(uint8_t min, uint8_t max, uint8_t mean, uint8_t med);
+void print_statistics(unsigned char min, unsigned char max, float mean, float med);
 
 /**
  * @brief A function that prints the whole array
@@ -47,7 +47,7 @@ void print_statistics(uint8_t min, uint8_t max, uint8_t mean, uint8_t med);
  * 
  * @return Returns 0 after printing the array
  */
-void print_array(uint8_t *ptr, uint8_t size);
+void print_array(unsigned char *ptr, unsigned int size);
 
 /**
  * @brief A function that finds the median
@@ -58,7 +58,7 @@ void print_array(uint8_t *ptr, uint8_t size);
  *
  * @return Returns the median
  */
-uint8_t find_median(uint8_t *ptr, uint8_t size);
+float find_median(unsigned char *ptr, unsigned int size);
 
 /**
  * @brief A function that calculates the mean
@@ -69,7 +69,7 @@ uint8_t find_median(uint8_t *ptr, uint8_t size);
  *
  * @return Returns the mean
  */
-uint8_t find_mean(uint8_t *ptr, uint8_t size);
+float find_mean(unsigned char *ptr, unsigned int size);
 
 /**
  * @brief A function that finds the maximum value in the given data
@@ -80,7 +80,7 @@ uint8_t find_mean(uint8_t *ptr, uint8_t size);
  *
  * @return Returns the maximum value
  */
-uint8_t find_maximum(uint8_t *ptr, uint8_t size);
+unsigned char find_maximum(unsigned char *ptr, unsigned int size);
 
 /**
  * @brief A function that finds the minimum
@@ -91,7 +91,7 @@ uint8_t find_maximum(uint8_t *ptr, uint8_t size);
  *
  * @return Returns the minimum
  */
-uint8_t find_minimum(uint8_t *ptr, uint8_t size);
+unsigned char find_minimum(unsigned char *ptr, unsigned int size);
 
 /**
  * @brief A function that sorts the array
@@ -103,6 +103,6 @@ uint8_t find_minimum(uint8_t *ptr, uint8_t size);
  * @returns nothing
  */
 
-void sort_array(uint8_t *ptr, uint8_t size);
+void sort_array(unsigned char *ptr, unsigned int size);
 
 #endif /* __STATS_H__ */
