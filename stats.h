@@ -36,7 +36,7 @@
  *
  * @return Returns nothing after a successful printing of the statistics using printf.
  */
-void print_statistics(unsigned char min, unsigned char max, float mean, float med);
+void print_statistics(float mean, float median, unsigned char min, unsigned char max);
 
 /**
  * @brief A function that prints the whole array
